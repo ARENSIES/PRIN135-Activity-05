@@ -25,3 +25,30 @@ footer {
     text-align: right;
     padding: 20px 50px;
 }
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    padding: 5%;
+    gap: 1rem;
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
